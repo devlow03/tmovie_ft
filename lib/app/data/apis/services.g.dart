@@ -160,11 +160,15 @@ class _Services2 implements Services2 {
     required String path,
     required String slug,
     int? page,
+    String? country,
+    String? year,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{
       r'slug': slug,
       r'page': page,
+      r'country': country,
+      r'year': year,
     };
     queryParameters.removeWhere((k, v) => v == null);
     final _headers = <String, dynamic>{};

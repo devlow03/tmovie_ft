@@ -32,7 +32,9 @@ abstract class Services2 {
   Future<GetFilmByCategory> getMovieGenre(
       {@Path('path') required String path,
       @Query('slug') required String slug,
-      @Query('page') required int? page
+      @Query('page') required int? page,
+      @Query('country') required String? country,
+      @Query('year') required String? year
       });
 
   @GET("/_next/data/s4OlXy8jONoHVWAT5vg7b/phim/{path}.json")
