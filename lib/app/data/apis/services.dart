@@ -34,7 +34,7 @@ abstract class Services {
   Future<GetFilmDetails>getFilmDetails({@Path('path') required String path});
 
   @GET("/search/{keyword}")
-  Future<GetFilmByCategory>getSearch({@Path("keyword") required String keyWord});
+  Future<GetFilmByCategory>getSearch({@Path("keyword") required String keyWord,@Query('page') int? page});
 
   
 }
