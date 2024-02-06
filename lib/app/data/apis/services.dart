@@ -11,35 +11,32 @@ part 'services.g.dart';
 @RestApi(baseUrl: GlobalData.baseUrl)
 abstract class Services {
   factory Services(Dio dio, {String baseUrl}) = _Services;
-  @GET("/danh-sach/phim-moi-cap-nhat")
-  Future<GetNewFilm> getNewFilm({@Query("page") required String? page});
+  @GET("/new-film")
+  Future<GetNewFilm> getNewFilm();
 
-  @GET("/phim/{slug}")
-  Future<GetFilmDetails>getFilmDetails({@Path('slug') required String slug});
-}
 
-@RestApi(baseUrl: GlobalData.baseUrlCc)
-abstract class Services2 {
-  factory Services2(Dio dio, {String baseUrl}) = _Services2;
-  @GET("/_next/data/s4OlXy8jONoHVWAT5vg7b/danh-sach/{path}.json")
+   @GET("/list-film")
   Future<GetFilmByCategory> getFilmByCategory(
-      {@Path('path') required String path,
-      @Query('slug') required String slug,
+      {@Query('path') required String path,
+      
       @Query('page') required int? page
       });
   
-  @GET("/_next/data/s4OlXy8jONoHVWAT5vg7b/the-loai/{path}.json")
+  @GET("/genre")
   Future<GetFilmByCategory> getMovieGenre(
-      {@Path('path') required String path,
-      @Query('slug') required String slug,
+      {@Query('path') required String path,
       @Query('page') required int? page,
       @Query('country') required String? country,
       @Query('year') required String? year
       });
 
-  @GET("/_next/data/s4OlXy8jONoHVWAT5vg7b/phim/{path}.json")
-  Future<GetFilmDetails>getFilmDetails({@Path('path') required String path, @Query('slug') required String slug});
+  @GET("/details/{path}")
+  Future<GetFilmDetails>getFilmDetails({@Path('path') required String path});
 
-  @GET("/_next/data/s4OlXy8jONoHVWAT5vg7b/tim-kiem.json")
-  Future<GetFilmByCategory>getSearch({@Query("keyword") required String keyWord});
+  @GET("/search/{keyword}")
+  Future<GetFilmByCategory>getSearch({@Path("keyword") required String keyWord});
+
+  
 }
+
+
