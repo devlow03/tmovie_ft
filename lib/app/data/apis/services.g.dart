@@ -50,12 +50,18 @@ class _Services implements Services {
   @override
   Future<GetFilmByCategory> getFilmByCategory({
     required String path,
+    String? category,
     int? page,
+    String? country,
+    String? year,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{
       r'path': path,
+      r'category': category,
       r'page': page,
+      r'country': country,
+      r'year': year,
     };
     queryParameters.removeWhere((k, v) => v == null);
     final _headers = <String, dynamic>{};

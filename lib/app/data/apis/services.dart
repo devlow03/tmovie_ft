@@ -18,8 +18,10 @@ abstract class Services {
    @GET("/list-film")
   Future<GetFilmByCategory> getFilmByCategory(
       {@Query('path') required String path,
-      
-      @Query('page') required int? page
+      @Query('category') required String? category,
+      @Query('page') required int? page,
+       @Query('country') required String? country,
+      @Query('year') required String? year
       });
   
   @GET("/genre")
