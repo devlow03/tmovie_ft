@@ -2,7 +2,11 @@ import 'dart:io';
 import 'package:app_ft_movies/app/core/global_data.dart';
 import 'package:app_ft_movies/app/data/repository/get_film_by_category.dart';
 import 'package:app_ft_movies/app/data/repository/get_film_details.dart';
+import 'package:app_ft_movies/app/data/repository/get_history_response.dart';
 import 'package:app_ft_movies/app/data/repository/get_new_film.dart';
+import 'package:app_ft_movies/app/data/repository/post_add_history.dart';
+import 'package:app_ft_movies/app/data/repository/post_create_token.dart';
+import 'package:app_ft_movies/app/data/repository/post_create_token_response.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
@@ -38,7 +42,14 @@ abstract class Services {
   @GET("/search/{keyword}")
   Future<GetFilmByCategory>getSearch({@Path("keyword") required String keyWord,@Query('page') int? page});
 
-  
+  @POST("/create-token")
+  Future<PostCreateTokenResponse>postCreateToken({@Body() PostCreateToken? body});
+
+  @POST("/add-history")
+  Future postAddHistory({@Body() PostAddHistory? body});
+
+  @GET("/history")
+  Future<GetHistoryRespone>getHistory({@Query('limit') String? limit, @Header("Authorization") String? token});
 }
 
 
