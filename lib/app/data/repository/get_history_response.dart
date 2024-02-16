@@ -10,17 +10,21 @@ String getHistoryResponeToJson(GetHistoryRespone data) => json.encode(data.toJso
 
 class GetHistoryRespone {
     List<Datum> data;
+    int total;
 
     GetHistoryRespone({
         required this.data,
+        required this.total,
     });
 
     factory GetHistoryRespone.fromJson(Map<String, dynamic> json) => GetHistoryRespone(
         data: List<Datum>.from(json["data"].map((x) => Datum.fromJson(x))),
+        total: json["total"],
     );
 
     Map<String, dynamic> toJson() => {
         "data": List<dynamic>.from(data.map((x) => x.toJson())),
+        "total": total,
     };
 }
 

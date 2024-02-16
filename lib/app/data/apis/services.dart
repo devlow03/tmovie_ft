@@ -49,7 +49,7 @@ abstract class Services {
   Future postAddHistory({@Body() PostAddHistory? body});
 
   @GET("/history")
-  Future<GetHistoryRespone>getHistory({@Query('limit') String? limit, @Header("Authorization") String? token});
+  Future<GetHistoryRespone>getHistory({@Query('limit') int? limit, @Header("Authorization") String? token});
 }
 
 

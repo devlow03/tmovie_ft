@@ -243,7 +243,7 @@ class _Services implements Services {
 
   @override
   Future<GetHistoryRespone> getHistory({
-    String? limit,
+    int? limit,
     String? token,
   }) async {
     const _extra = <String, dynamic>{};
