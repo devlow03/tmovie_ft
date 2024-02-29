@@ -56763,7 +56763,7 @@ if(q==null)q=s
 else{q=q.d
 if(q==null)q=s
 else{q=q.go
-q=q==null?s:B.b.gM(q).c}}}}A.yP(r,"/the-loai/"+A.f(q),t.z)},
+q=q==null?s:B.b.gM(q).c}}}}A.yP(r,"the-loai/"+A.f(q),t.z)},
 $S:0}
 A.avv.prototype={
 $0(){var s,r,q,p,o,n,m=null,l=this.a,k=l.ay,j=k.gk(k)==null
@@ -56881,13 +56881,13 @@ if(r==null)r=""
 q=p.e
 if(q==null)q=""
 p=p.f
-A.yP(s,"/loai-phim/"+o+"?category="+r+"&country="+q+"&year="+A.f(p==null?"":p),t.z)}else{o=p.d
+A.yP(s,"loai-phim/"+o+"?category="+r+"&country="+q+"&year="+A.f(p==null?"":p),t.z)}else{o=p.d
 if(o==null)A.bgy($.aP(),"Th\xf4ng b\xe1o","Vui l\xf2ng ch\u1ecdn th\u1ec3 lo\u1ea1i phim tr\u01b0\u1edbc",B.j)
 else{s=$.aP()
 r=p.e
 if(r==null)r=""
 p=p.f
-A.yP(s,"/the-loai/"+o+"?country="+r+"&year="+A.f(p==null?"":p),t.z)}}},
+A.yP(s,"the-loai/"+o+"?country="+r+"&year="+A.f(p==null?"":p),t.z)}}},
 $S:0}
 A.aLN.prototype={
 $1(a){var s=this.a
@@ -56956,7 +56956,7 @@ s=this.b
 r=J.aM(J.aM(p.gk(p),s),"slug")
 r=A.f(r==null?"":r)
 s=J.aM(J.aM(p.gk(p),s),"country")
-A.yP(q,"/loai-phim/"+o+"?category="+r+"&country="+A.f(s==null?"":s),t.z)},
+A.yP(q,"loai-phim/"+o+"?category="+r+"&country="+A.f(s==null?"":s),t.z)},
 $S:0}
 A.amH.prototype={
 $0(){var s,r=null,q=this.a,p=q.cx,o=J.iZ(p.gk(p)),n=q.k4,m=this.b,l=J.aM(p.gk(p),J.aM(J.aM(n.gk(n),m),"id"))
@@ -57143,7 +57143,7 @@ return A.fq(A.eS(!1,k,!0,new A.bk(B.hE,A.hu(B.cT,A.b([n,A.vL(k,A.d8(A.b([j,A.bF(
 $S:364}
 A.aBM.prototype={
 $0(){var s=$.aP(),r=this.a
-return A.yP(s,"/chi-tiet/"+A.f(r==null?null:r.d),t.z)},
+return A.yP(s,"chi-tiet/"+A.f(r==null?null:r.d),t.z)},
 $S:0}
 A.aBP.prototype={
 $2(a,b){this.a.dy.sk(0,a)},
@@ -57542,7 +57542,7 @@ return A.eS(!1,l,!0,A.aXj(A.aV(l,A.d8(A.b([r,new A.bk(B.N9,p,l),new A.bk(B.N7,A.
 A.aJJ.prototype={
 $0(){var s=$.aP()
 A.aom(s)
-A.yP(s,"/chi-tiet/"+A.f(this.a.a.f),t.z)},
+A.yP(s,"chi-tiet/"+A.f(this.a.a.f),t.z)},
 $S:0}
 A.aJI.prototype={
 $1(a){var s=this.a
@@ -128620,7 +128620,7 @@ r($,"by4","aWX",()=>B.H6)
 s($,"bzb","aX2",()=>new A.awD())
 r($,"buM","dS",()=>new A.va(A.M([50,A.mi(856931786),100,A.mi(1427357130),200,A.mi(1712569802),300,A.mi(2853420490),400,A.mi(3994271178),500,B.IG,600,A.mi(4564696522),700,A.mi(5705547210),800,A.mi(6846397898),900,A.mi(8557673930)],t.S,t.n8),4279483850))
 s($,"bvr","baS",()=>{var q=null,p=t.z
-return A.b([A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/",!0,new A.azp(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/chi-tiet/:slug",!0,new A.azq(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/the-loai/:category",!0,new A.azr(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/loai-phim/:slug",!0,new A.azs(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})
+return A.b([A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/",!0,new A.azp(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"chi-tiet/:slug",!0,new A.azq(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"the-loai/:category",!0,new A.azr(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"loai-phim/:slug",!0,new A.azs(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})
 s($,"bxd","bbN",()=>new A.N())
 s($,"buc","bat",()=>new A.N())
 s($,"byy","b0Y",()=>A.ir())
