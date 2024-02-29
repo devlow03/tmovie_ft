@@ -128620,7 +128620,7 @@ r($,"by4","aWX",()=>B.H6)
 s($,"bzb","aX2",()=>new A.awD())
 r($,"buM","dS",()=>new A.va(A.M([50,A.mi(856931786),100,A.mi(1427357130),200,A.mi(1712569802),300,A.mi(2853420490),400,A.mi(3994271178),500,B.IG,600,A.mi(4564696522),700,A.mi(5705547210),800,A.mi(6846397898),900,A.mi(8557673930)],t.S,t.n8),4279483850))
 s($,"bvr","baS",()=>{var q=null,p=t.z
-return A.b([A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/",!0,new A.azp(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"chi-tiet/:slug",!0,new A.azq(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"the-loai/:category",!0,new A.azr(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"loai-phim/:slug",!0,new A.azs(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})
+return A.b([A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/",!0,new A.azp(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/chi-tiet/:slug",!0,new A.azq(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/the-loai/:category",!0,new A.azr(),q,q,q,!0,!0,q,q,q,q,p),A.Vv(q,q,q,B.ii,B.ig,B.E,q,!1,q,!0,q,"/loai-phim/:slug",!0,new A.azs(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})
 s($,"bxd","bbN",()=>new A.N())
 s($,"buc","bat",()=>new A.N())
 s($,"byy","b0Y",()=>A.ir())
