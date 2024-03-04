@@ -55788,7 +55788,7 @@ n=A
 s=2
 return A.u(A.aY9(p,new A.ajd(q),t.kE),$async$Ab)
 case 2:o=new n.a9q(b)
-o.b="https://tmovie.thiendev.shop/api"
+o.b="https://api.tmovie.thiendev.shop/api"
 A.d6(p,o,t.eP)
 return A.q(null,r)}})
 return A.r($async$Ab,r)},
@@ -55838,6 +55838,7 @@ case 5:s=7
 return A.u(A.aBk(),$async$$2)
 case 7:p=A.y(t.N,o)
 p.m(0,"Access-Control-Allow-Origin","*")
+p.m(0,"content-type","application/x-www-form-urlencoded")
 o=a.b
 o===$&&A.b()
 p.P(0,o)

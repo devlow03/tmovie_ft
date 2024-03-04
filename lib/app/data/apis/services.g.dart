@@ -13,7 +13,7 @@ class _Services implements Services {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://tmovie.thiendev.shop/api';
+    baseUrl ??= 'https://api.tmovie.thiendev.shop/api';
   }
 
   final Dio _dio;
